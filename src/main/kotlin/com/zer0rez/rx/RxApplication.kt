@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 
 @SpringBootApplication
-class RxKApplication
+class RxApplication
 
 fun main(args: Array<String>) {
-    SpringApplication.run(RxKApplication::class.java, *args)
+    SpringApplication.run(RxApplication::class.java, *args)
 }
