@@ -9,7 +9,7 @@ class StandardDeviationController(
     fun findAll() = repository.findAll()
 
     @GetMapping("/{id}")
-    fun findById(@PathVariable id: Long) = repository.findOne(id)
+    fun findById(@PathVariable id: Long) : StandardDeviation? = repository.findOne(id)
 
     @PostMapping("/standardDeviation")
     fun save(@RequestBody stddev: StandardDeviation) = repository.save(stddev)

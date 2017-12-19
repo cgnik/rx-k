@@ -7,7 +7,7 @@ import java.math.BigDecimal
 annotation class Noarg
 
 @Noarg
-data class Point(@Id val id: Long, val point: BigDecimal)
+data class Point(val id: Long, val point: BigDecimal)
 
-@Noarg
-data class StandardDeviation(@Id @column(name = "_id") val id: Long, val answer: BigDecimal, @Document val points: Array<Point>)
+@Noarg @Document(collection = "stddev")
+data class StandardDeviation( @field: Id val id: Long, val answer: BigDecimal, val points: Array<Point>)
