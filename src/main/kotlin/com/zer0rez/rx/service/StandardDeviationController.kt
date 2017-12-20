@@ -1,5 +1,7 @@
-package com.zer0rez.rx
+package com.zer0rez.rx.service
 
+import com.zer0rez.rx.repository.StandardDeviationRepository
+import com.zer0rez.rx.domain.StandardDeviation
 import org.springframework.web.bind.annotation.*
 
 @RestController
